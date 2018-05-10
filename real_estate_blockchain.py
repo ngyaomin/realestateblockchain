@@ -155,7 +155,7 @@ def connect_node():
         return "No Node", 400
     for node in nodes:
         blockchain.add_node(node)
-    response = {'message': 'All nodes are connected. The YaoCoin blockchain now contains following nodes:', 
+    response = {'message': 'All nodes are connected. The Real Estate blockchain now contains following nodes:', 
                 'total_nodes': list(blockchain.nodes)}
     return jsonify(response), 201
 
